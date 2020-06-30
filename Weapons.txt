@@ -1,0 +1,6 @@
+Knife
+Pistol
+Axe
+Bat
+Rope
+Candlestick

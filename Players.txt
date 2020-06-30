@@ -1,0 +1,6 @@
+Melancholy May, blue, Human, 9, 10
+Miss Scarlet, red, Computer, 9, 16
+Mr. Green, green, Computer, 11, 16
+Colonel Mustard, yellow, Computer, 11, 10
+Professor Plum, magenta, Computer, 13, 10
+Clementine, orange, Computer, 13, 16

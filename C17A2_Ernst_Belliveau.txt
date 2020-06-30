@@ -1,0 +1,78 @@
+C17A2
+Alexandra Ernst
+Mia Belliveau
+
+----------------------------------------------------------------------
+Before and after for a single change:
+
+public DoorDirection getDoorDirection() {
+ 	if (door == DoorDirection.DOWN)
+ 		return DoorDirection.DOWN;
+ 	else if (door == DoorDirection.UP)
+ 		return DoorDirection.UP;
+ 	else if (door == DoorDirection.LEFT)
+ 		return DoorDirection.LEFT;
+ 	else return DoorDirection.RIGHT;
+}
+changed to ...
+public DoorDirection getDoorDirection() {
+	return door;
+}
+--------------------------------------------------------------------------
+Git log:
+
+commit 3554e50284052b7bd753a8b1606b33918f22d675
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 18:02:54 2020 -0600
+
+    Refactored(touch ups)
+
+commit 08aec7d737db711e24e55ef7da7765f5ab7d5364
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 17:59:19 2020 -0600
+
+    Refactored(added comments to addValidNeighborsToAdjList)
+
+commit 583863adba4333196104a1c5436066444905d70d
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 17:55:23 2020 -0600
+
+    Refactored(added comments to addAdjWalkwayToDoorAdjList)
+
+commit 8d4552228cf1c9552d8fc0f792ba62c52a0e8b75
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 17:50:43 2020 -0600
+
+    Refactoring(edited comments for calcTargets methof)
+
+commit 002a712d8e65913040a2ba124dbeadbb55e33628
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 17:44:16 2020 -0600
+
+    Refactored(extracted 2 methods from calcAdjacencies)
+
+commit d56e53fed287c3cbd9971719422a850272253aea
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 17:33:04 2020 -0600
+
+    Refactored(loadBoardConfig: got rid of an unnecessary variable, added comments)
+
+commit b1012a5b695f9811d2142ba89bd9d3a2a86fb03e
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 16:37:57 2020 -0600
+
+    Refactoring(got rid of a redundant try/catch block in loadRoomConfig, all tests still pass)
+
+commit 1bad137ac7431a329491a4304261203f0f8ce7b7
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Wed Mar 11 16:28:40 2020 -0600
+
+    Refactoring(condensed arbitrary lines in loadRoomConfig for fileReader and Scanner)
+
+commit 57763786a483e64203920052a1d63a29b584ccec
+Author: aernst14 <aernst@mymail.mines.edu>
+Date:   Tue Mar 10 17:49:32 2020 -0600
+
+    Refactored some try/catch blocks, a redundant if statement in calcAdjacencies, reduce getDoorDirection to just return door, and extracted the method in calcTargetsHelper to reduce duplicated code
+
+
